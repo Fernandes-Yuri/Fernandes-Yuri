@@ -1,4 +1,4 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=slice&color=E0E0E0&height=120&section=header"/>
+<img width=100% src="https://capsule-render.vercel.app/api?type=slice&color=F0F0F0&height=120&section=header"/>
 
 <div align="center">
   <h1 style="font-family: 'Arial', sans-serif; color: #fff;">Hi, I'm Yuri Fernandes</h1>
@@ -10,8 +10,8 @@
   </p>
 </div>
 <div align="center">  
-  <img width="48%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Fernandes-Yuri&show_icons=true&count_private=true&hide_border=true&title_color=E0E0E0&icon_color=E0E0E0&text_color=c9d1d9&bg_color=0d1117" alt="Yuri Fernandes GitHub Stats" />  
-  <img width="48%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fernandes-Yuri&layout=compact&hide_border=true&title_color=E0E0E0&text_color=E0E0E0&bg_color=0d1117" />
+  <img width="48%" height="195px" src="https://github-readme-stats.vercel.app/api?username=Fernandes-Yuri&show_icons=true&count_private=true&hide_border=true&title_color=F0F0F0&icon_color=F0F0F0&text_color=c9d1d9&bg_color=0d1117" alt="Yuri Fernandes GitHub Stats" />  
+  <img width="48%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fernandes-Yuri&layout=compact&hide_border=true&title_color=F0F0F0&text_color=F0F0F0&bg_color=0d1117" />
 </div>
 
 <br/>
@@ -19,7 +19,7 @@
 ### 📚 Skills & Technologies
 
 <div align="left">
-  <p style="font-family: 'Arial', sans-serif; color: #E0E0E0;">Tenho experiência com:</p>
+  <p style="font-family: 'Arial', sans-serif; color: #F0F0F0;">Tenho experiência com:</p>
   <ul style="font-family: 'Arial', sans-serif; color: #fff; list-style-type: none;">
     <li>👨‍💻 Java (POO, JavaFX, Spring)</li>
     <li>🐍 Python (Flask, Django, automações)</li>
@@ -33,7 +33,7 @@
 
 ### 📈 GitHub Activity
 
-[![Yuri's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Fernandes-Yuri&bg_color=000000&color=E0E0E0&line=E0E0E0&point=E0E0E0&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Yuri's GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Fernandes-Yuri&bg_color=000000&color=F0F0F0&line=F0F0F0&point=F0F0F0&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 <br/>
 
