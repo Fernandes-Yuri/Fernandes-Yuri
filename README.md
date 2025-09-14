@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=shark&height=250&color=gradient&text=Hi,%20I'm%20Yuri%20Fernandes&reversal=false&fontAlign=49&animation=scaleIn&fontColor=FF2C2C" alt="Banner de perfil"/>
+  <img src="https://capsule-render.vercel.app/api?type=shark&height=250&color=gradient&text=Hi,%20I'm%20Yuri%20Fernandes&reversal=false&fontAlign=49&animation=scaleIn&fontColor=8B0000&fontAlignY=35" alt="Banner de perfil"/>
 </div>
 <div align="center">
   <p style="font-family: 'Arial', sans-serif; font-size: 20px; color: #fff;">
