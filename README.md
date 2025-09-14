@@ -1,10 +1,7 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=slice&color=E0E0E0&height=120&section=header"/>
-  <img src="https://capsule-render.vercel.app/api?type=slice&color=FF0000&height=120&section=header" style="position:relative; z-index:1; top:-60px;"/>
-  <img src="https://capsule-render.vercel.app/api?type=slice&color=333333&height=120&section=header" style="position:relative; z-index:2; top:-120px;"/>
+  <img src="https://capsule-render.vercel.app/api?type=shark&height=250&color=gradient&text=Hi,%20I'm%20Yuri%20Fernandes&reversal=false&fontAlign=49&animation=scaleIn&fontColor=FF2C2C" alt="Banner de perfil"/>
 </div>
 <div align="center">
-  <h1 style="font-family: 'Arial', sans-serif; color: #fff;">Hi, I'm Yuri Fernandes</h1>
   <p style="font-family: 'Arial', sans-serif; font-size: 20px; color: #fff;">
     🎓 28 years old | 💻 Developer | 📍 From Brazil | 🚀 Always learning new tech!
   </p>
