@@ -1,5 +1,8 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=slice&color=F0F0F0&height=120&section=header"/>
-
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=slice&color=E0E0E0&height=120&section=header"/>
+  <img src="https://capsule-render.vercel.app/api?type=slice&color=FF0000&height=120&section=header" style="position:relative; z-index:1; top:-60px;"/>
+  <img src="https://capsule-render.vercel.app/api?type=slice&color=333333&height=120&section=header" style="position:relative; z-index:2; top:-120px;"/>
+</div>
 <div align="center">
   <h1 style="font-family: 'Arial', sans-serif; color: #fff;">Hi, I'm Yuri Fernandes</h1>
   <p style="font-family: 'Arial', sans-serif; font-size: 20px; color: #fff;">
