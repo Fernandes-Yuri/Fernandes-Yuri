@@ -1,94 +1,112 @@
 # Olá, eu sou o Yuri Fernandes 👋
 
-> **Analista e Desenvolvedor de Sistemas • Arquiteto de Software & AI-Augmented Engineering**  
-> Focado em transformar ideias em ecossistemas de produção robustos de ponta a ponta, combinando engenharia de software sólida, infraestrutura escalável em nuvem e orquestração avançada de agentes autônomos de IA.
+### 🚀 Analista e Desenvolvedor de Software
+
+Atuo na análise, concepção e desenvolvimento de sistemas distribuídos, aplicações móveis e soluções orientadas a microsserviços. Tenho o **Python** como linguagem principal de coração 🐍, operando com facilidade e solidez em ecossistemas modernos com **Kotlin** (Android nativo & Jetpack Compose), **TypeScript**, **JavaScript** e **Node.js**.
+
+Trabalho combinando análise técnica aprofundada, boas práticas de segurança/LGPD e ferramentas modernas de automação e inteligência artificial: orquestro esteiras de integração contínua com **Harness** e emprego ferramentas como **DeepSeek**, **Hermes**, **OpenAI Codex**, **Google Antigravity** e **OpenCode** para apoiar o fluxo de desenvolvimento, testes e entrega contínua de software.
 
 ---
 
-## ⚡ Metodologia: AI-Augmented Engineering
+### 🏥 Ecossistema em Destaque: Braga Saúde
 
-Pratico a **Engenharia de Software Aumentada por IA (AI-Augmented Engineering)**: uma abordagem de alta velocidade que alia visão de produto, arquitetura de software sólida, cobertura de testes e orquestração de agentes autônomos como força multiplicadora de entrega.
+> Plataforma completa de autocuidado clínico preventivo, automonitoramento de hábitos e suporte familiar remoto (Modo Cuidador).
 
-```mermaid
-flowchart LR
-    A[Infraestrutura de Contexto & ADRs] --> B[Agentes Autônomos de Engenharia]
-    B --> C[Ecossistema Polirrepositório]
-    C --> D[CI/CD & Produção em Nuvem]
-```
-
-### Como eu trabalho na prática:
-* **Orquestração de Agentes Especializados:** Trabalho com fluidez utilizando **Antigravity**, **Codex**, **OpenCode** e **DeepSeek Harness**, tratando a IA como uma extensão técnica de alta precisão para prototipagem ágil, refatoração de código e arquitetura de sistemas.
-* **Context Engineering (Engenharia de Contexto):** Agentes de IA só performam com excelência quando o contexto é cirúrgico. Projeto malhas de documentação estruturada que eliminam alucinações e alinham regras de negócio complexas.
-* **Rigor com Testes e Tipagem:** A aceleração proporcionada pela IA é sempre respaldada por baterias automatizadas de testes unitários e de integração, garantindo que velocidade e estabilidade caminhem lado a lado.
-* **Privacy & Compliance por Design:** Desenvolvimento orientado a normas rigorosas de privacidade (como a **LGPD**), assegurando proteção de dados sensíveis, consentimento explícito e mitigação de riscos regulatórios desde o primeiro dia de arquitetura.
-
----
-
-## 📚 Infraestrutura de Contexto: O "Cérebro" dos Projetos
-
-Para sustentar o desenvolvimento acelerado com múltiplos agentes autônomos sem perda de coerência técnica, projeto e mantenho uma **Infraestrutura de Contexto viva e indexada**:
-
-* 🏛️ **Single Source of Truth (SSOT):** Base de conhecimento desacoplada do código executável, servindo como bússola para decisões arquiteturais e governança de agentes.
-* 📜 **ADRs (Architecture Decision Records):** Registro formal e contínuo de decisões de engenharia, documentando o racional técnico, impacto de infraestrutura e critérios de escolha de cada solução.
-* ⚖️ **Matriz de Precedência Documental:** Hierarquia clara de regras para guiar os agentes autônomos na resolução de conflitos técnicos de forma independente e consistente.
-* 🧭 **Segregação Modular por Domínio:** Separação estrita de escopos (Produto, UX, Backend, Segurança/LGPD, Infraestrutura e Distribuição) para que o agente carregue exclusivamente o contexto relevante para cada tarefa.
+<table>
+  <tr>
+    <td>
+      <h3>📱 Plataforma Integrada Braga Saúde</h3>
+      <p>
+        Solução completa com arquitetura multicamadas, garantindo integridade de dados clínicos autorreportados (SBC, SBD e OMS) e comunicação síncrona/assíncrona entre pacientes e cuidadores.
+      </p>
+      <ul>
+        <li><strong>App Android Nativo:</strong> Desenvolvido em <strong>Kotlin</strong> com <strong>Jetpack Compose</strong>, seguindo arquitetura MVVM/MVI, persistência local criptografada via <strong>Room Database</strong> (SQLCipher e migrações versionadas), sincronização resiliente com <strong>WorkManager</strong> e integração com <strong>Google Health Connect</strong>.</li>
+        <li><strong>PWA Cuidador (Web):</strong> Interface reativa e segura (Zero-Trust) em TypeScript/PWA para acompanhamento de sinais vitais, checklists de medicamentos e avisos em tempo real.</li>
+        <li><strong>Backend Gateway & Microsserviços (Python):</strong> Núcleo em <strong>Python</strong> responsável pelo roteamento de APIs, processamento de regras clínicas, extração e validação de laudos e orquestração de microsserviços.</li>
+        <li><strong>Módulo de IA & Voz:</strong> Transcrição e orquestração de fluxos conversacionais via WebSocket, transcrição de áudios (Whisper), síntese neural e integração com WhatsApp Business Cloud API.</li>
+        <li><strong>Dados, Nuvem & LGPD:</strong> Infraestrutura com <strong>PostgreSQL dedicado</strong>, autenticação OTP em duas etapas, armazenamento autenticado de exames e esteiras de build/deploy contínuo com <strong>Harness</strong> e GitHub Actions.</li>
+      </ul>
+      <p>
+        🌐 <strong>Conheça a plataforma:</strong> <a href="https://bragasaude.online" target="_blank">bragasaude.online</a>
+      </p>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 📦 Arquitetura Polirrepositório & Ciclo de Vida Desacoplado
+### 💻 Stack & Tecnologias
 
-Adoto a divisão deliberada de sistemas complexos em um **ecossistema de repositórios modulares e especializados**, garantindo independência técnica, esteiras próprias de CI/CD e facilidade de manutenção:
-
-* 📱 **Mobile Nativo:** Aplicações móveis focadas em performance fluida, arquitetura moderna reativa, persistência local criptografada e processamento *on-device*. Pipeline de **CI/CD na nuvem via GitHub Actions** para compilação, testes e assinatura automatizada de builds.
-* ⚡ **Backend & Gateway Multicanal:** APIs assíncronas de alta concorrência com controle por semáforos, orquestração de mensageria em tempo real, validação segura de acessos e regras de negócio centrais.
-* 🌐 **Web & PWA Especializado:** Aplicações web progressivas desenvolvidas sob princípios **Zero-Trust** (mínimo privilégio), defesas ativas contra acessos abusivos e paridade de experiência multiplataforma (iOS, Android e Desktop).
-* 🛠️ **Operações & Serviços Desacoplados:** Painéis e utilitários internos que operam sob demanda consumindo serviços remotos, sem onerar a infraestrutura central de produção.
-
----
-
-## ☁️ Infraestrutura, Nuvem & Portabilidade (Anti-Lock-in)
-
-* **Produção Ativa na Nuvem:** Experiência prática na orquestração de ambientes em nuvem (**AWS**), instâncias dedicadas Linux (EC2), bancos de dados relacionais gerenciados (**PostgreSQL no RDS**), tráfego seguro de borda via **Cloudflare Tunnels** e governança Zero-Trust via **AWS Systems Manager (SSM)** (zero portas públicas de entrada).
-* **Filosofia Anti-Vendor Lock-in:** Arquiteturas pensadas para independência de provedor. Código desacoplado de SDKs proprietárias, armazenamento agnóstico e playbooks de contingência prontos para migração rápida entre nuvens (AWS, GCP, VPS/Hostinger/Hetzner) conforme metas de custo e escala.
-* **Processamento On-Device & IA Híbrida:**
-  * Pipelines de processamento local com visão computacional/OCR no dispositivo, aplicando validações matemáticas de qualidade (como análise de nitidez de imagem pré-envio).
-  * Síntese de voz neural (TTS) otimizada para streaming de áudio e baixa latência.
-  * Experimentação e curadoria com modelos compactos (SLMs) para inferência local segura e custo de computação zero.
-
----
-
-## 🛠️ Tecnologias & Ferramentas do meu dia a dia
-
-### 🧠 Agentes & AI Engineering
-* **Orquestração & Agentes:** Antigravity, Codex, OpenCode, DeepSeek Harness
-* **IA & Áudio:** Hugging Face (Transformers, Datasets), Modelos Compactos (SLMs / LLMs), Piper Neural TTS, Google ML Kit (OCR on-device)
-
-### 💻 Desenvolvimento & Mobile
-* **Mobile Nativo:** Kotlin, Android SDK, Jetpack Compose, Material 3, Coroutines, Flow, Room DB, R8/ProGuard
-* **Backend & APIs:** Python (FastAPI, Uvicorn, Asyncio, Pydantic), REST, WebSockets, Meta WhatsApp Cloud API
-* **Web & Front-End:** Next.js, React, TypeScript, Tailwind CSS, PWAs
-
-### ⚙️ Nuvem, DevOps & Segurança
-* **Nuvem & Infraestrutura:** AWS (EC2, RDS, SSM), Firebase (Auth, Hosting)
-* **Bancos de Dados:** PostgreSQL 18.3, SQLite / SQLCipher, Firestore
-* **Redes & Segurança:** Cloudflare Tunnels, Reverse Proxies, Zero-Trust, LGPD Compliance
-* **CI/CD & Containers:** GitHub Actions (Build e Assinatura de APKs), Docker & Compose, Linux (Ubuntu), Bash Scripting
+<p align="left">
+  <!-- Python -->
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <!-- Kotlin -->
+  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin" />
+  <!-- Android -->
+  <img src="https://img.shields.io/badge/Android_Compose-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android Compose" />
+  <!-- TypeScript -->
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <!-- JavaScript -->
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <!-- Node.js -->
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <!-- PostgreSQL -->
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+</p>
 
 ---
 
-## 💬 Filosofia de Trabalho
+### ⚙️ CI/CD, Ferramentas & Ecossistema de IA
 
-> *"Não me prendo a títulos formais — meu foco é resolver problemas reais, construir arquiteturas sólidas que não quebram e entregar valor seguro na mão de quem usa."*
+> *"Trânsito fluido entre automação de pipelines, modelagem de regras de negócio e desenvolvimento orientado por agentes de IA."*
 
-* 🎯 **Pragmatismo:** Menos burocracia e mais código funcional, coberto por testes e rodando em produção.
-* 🔒 **Privacidade & Segurança:** Compliance com a LGPD e defesa em profundidade desenhados desde o primeiro dia.
-* ⚡ **Velocidade com Qualidade:** O uso estruturado de agentes de IA acelera o desenvolvimento sem nunca sacrificar a excelência técnica.
+<p align="left">
+  <!-- Harness -->
+  <img src="https://img.shields.io/badge/Harness-00A4E4?style=for-the-badge&logo=harness&logoColor=white" alt="Harness" />
+  <!-- DeepSeek -->
+  <img src="https://img.shields.io/badge/DeepSeek-1E293B?style=for-the-badge&logo=deepseek&logoColor=4D6BFE" alt="DeepSeek" />
+  <!-- OpenAI Codex -->
+  <img src="https://img.shields.io/badge/OpenAI_Codex-10A37F?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI Codex" />
+  <!-- Google Antigravity -->
+  <img src="https://img.shields.io/badge/Google_Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Antigravity" />
+  <!-- Nous Hermes -->
+  <img src="https://img.shields.io/badge/Hermes-6366F1?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAyTDIgN2wxMCA1IDEwLTUtMTAtNXpNMiAxN2wxMCA1IDEwLTUtMTAtNS0xMCA1em0wLTVsMTAgNSAxMC01LTEwLTUtMTAgNXoiLz48L3N2Zz4=&logoColor=white" alt="Hermes" />
+  <!-- OpenCode -->
+  <img src="https://img.shields.io/badge/OpenCode-0F172A?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzhCRkY4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBvbHlsaW5lIHBvaW50cz0iMTYgMTggMjIgMTIgMTYgNiIvPjxwb2x5bGluZSBwb2ludHM9IjggNiAyIDEyIDggMTgiLz48L3N2Zz4=&logoColor=38BFF8" alt="OpenCode" />
+  <!-- Git -->
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+</p>
 
 ---
 
-## 📬 Conecte-se comigo
+### 📌 Competências & Foco de Atuação
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Yuri%20Fernandes-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yurifjs/)
-[![GitHub](https://img.shields.io/badge/GitHub-Fernandes--Yuri-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Fernandes-Yuri)
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models%20%26%20Datasets-FFD21E?style=for-the-badge&logoColor=black)](https://huggingface.co/)
-[![Email](https://img.shields.io/badge/Contato-workfjsyuri%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:workfjsyuri@gmail.com)
+- 🌐 **Backend & Microsserviços:** Construção de gateways de API, pipelines de integração em Python e modelagem relacional estruturada em PostgreSQL.
+- 📱 **Desenvolvimento Mobile:** Aplicações Android modernas com Kotlin e Compose, offline-first e alta segurança em dados biométricos.
+- 🛡️ **Segurança & Governança:** Implementação de princípios Privacy by Design, isolamento multi-tenant, conformidade com a LGPD e fluxos de autenticação sem senhas (OTP).
+- 🔄 **Pipelines CI/CD:** Automação de compilação, suites de testes automatizados e releases controlados via Harness.
+
+---
+
+### 📊 Métricas do GitHub
+
+<p align="center">
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=Fernandes-Yuri&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub" />
+  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fernandes-Yuri&layout=compact&theme=tokyonight" alt="Linguagens Mais Usadas" />
+</p>
+
+---
+
+### 🌐 Contato & Conexões
+
+<p align="left">
+  <a href="mailto:workfjsyuri@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-workfjsyuri%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://www.linkedin.com/in/yuri-fernandes-901247385" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Yuri_Fernandes-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://bragasaude.online" target="_blank">
+    <img src="https://img.shields.io/badge/Braga_Saúde-bragasaude.online-00A884?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Braga Saúde" />
+  </a>
+</p>
