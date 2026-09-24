@@ -2,7 +2,7 @@
 
 ### 🚀 Analista e Desenvolvedor de Software
 
-Atuo na análise, concepção e desenvolvimento de sistemas distribuídos, aplicações móveis e soluções orientadas a microsserviços. Tenho o **Python** como linguagem principal de coração 🐍, operando com facilidade e solidez em ecossistemas modernos com **Kotlin** (Android nativo & Jetpack Compose), **TypeScript**, **JavaScript** e **Node.js**.
+Atuo na análise, conceção e desenvolvimento de sistemas distribuídos, aplicações móveis e soluções orientadas a microsserviços. Tenho o **Python** como linguagem principal de eleição 🐍, operando com facilidade e solidez em ecossistemas modernos com **Kotlin** (Android nativo & Jetpack Compose), **TypeScript**, **JavaScript** e **Node.js**.
 
 Trabalho combinando análise técnica aprofundada, boas práticas de segurança/LGPD e ferramentas modernas de automação e inteligência artificial: orquestro esteiras de integração contínua com **Harness** e emprego ferramentas como **DeepSeek**, **Hermes**, **OpenAI Codex**, **Google Antigravity** e **OpenCode** para apoiar o fluxo de desenvolvimento, testes e entrega contínua de software.
 
@@ -10,7 +10,7 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
 
 ### 🏥 Ecossistema em Destaque: Braga Saúde
 
-> Plataforma completa de autocuidado clínico preventivo, automonitoramento de hábitos e suporte familiar remoto (Modo Cuidador).
+> Plataforma completa de autocuidado clínico preventivo, automonitorização de hábitos e suporte familiar remoto (Modo Cuidador).
 
 <table>
   <tr>
@@ -20,7 +20,7 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
         Solução completa com arquitetura multicamadas, garantindo integridade de dados clínicos autorreportados (SBC, SBD e OMS) e comunicação síncrona/assíncrona entre pacientes e cuidadores.
       </p>
       <ul>
-        <li><strong>App Android Nativo:</strong> Desenvolvido em <strong>Kotlin</strong> com <strong>Jetpack Compose</strong>, seguindo arquitetura MVVM/MVI, persistência local criptografada via <strong>Room Database</strong> (SQLCipher e migrações versionadas), sincronização resiliente com <strong>WorkManager</strong> e integração com <strong>Google Health Connect</strong>.</li>
+        <li><strong>App Android Nativo:</strong> Desenvolvido em <strong>Kotlin</strong> com <strong>Jetpack Compose</strong>, seguindo arquitetura MVVM/MVI, persistência local cifrada via <strong>Room Database</strong> (SQLCipher e migrações versionadas), sincronização resiliente com <strong>WorkManager</strong> e integração com <strong>Google Health Connect</strong>.</li>
         <li><strong>PWA Cuidador (Web):</strong> Interface reativa e segura (Zero-Trust) em TypeScript/PWA para acompanhamento de sinais vitais, checklists de medicamentos e avisos em tempo real.</li>
         <li><strong>Backend Gateway & Microsserviços (Python):</strong> Núcleo em <strong>Python</strong> responsável pelo roteamento de APIs, processamento de regras clínicas, extração e validação de laudos e orquestração de microsserviços.</li>
         <li><strong>Módulo de IA & Voz:</strong> Transcrição e orquestração de fluxos conversacionais via WebSocket, transcrição de áudios (Whisper), síntese neural e integração com WhatsApp Business Cloud API.</li>
@@ -84,20 +84,25 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
 - 🌐 **Backend & Microsserviços:** Construção de gateways de API, pipelines de integração em Python e modelagem relacional estruturada em PostgreSQL.
 - 📱 **Desenvolvimento Mobile:** Aplicações Android modernas com Kotlin e Compose, offline-first e alta segurança em dados biométricos.
 - 🛡️ **Segurança & Governança:** Implementação de princípios Privacy by Design, isolamento multi-tenant, conformidade com a LGPD e fluxos de autenticação sem senhas (OTP).
-- 🔄 **Pipelines CI/CD:** Automação de compilação, suites de testes automatizados e releases controlados via Harness.
+- 🔄 **Pipelines CI/CD:** Automação de compilação, testes automatizados e releases controlados via Harness.
 
 ---
 
 ### 📊 Métricas do GitHub
 
 <p align="center">
-  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=Fernandes-Yuri&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="Estatísticas do GitHub" />
-  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Fernandes-Yuri&layout=compact&theme=tokyonight" alt="Linguagens Mais Usadas" />
+  <img src="https://img.shields.io/badge/Repositórios-2_Públicos-7F52FF?style=for-the-badge&logo=github&logoColor=white" alt="Repositórios Públicos" />
+  <img src="https://img.shields.io/badge/Seguidores-1-00A4E4?style=for-the-badge&logo=github&logoColor=white" alt="Seguidores" />
+  <img src="https://img.shields.io/badge/Status-Ativo-10B981?style=for-the-badge&logo=githubactions&logoColor=white" alt="Status" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Fernandes-Yuri&theme=tokyonight&hide_border=true" alt="Sequência de Contribuições no GitHub" />
 </p>
 
 ---
 
-### 🌐 Contato & Conexões
+### 🌐 Contacto & Conexões
 
 <p align="left">
   <a href="mailto:workfjsyuri@gmail.com" target="_blank">
