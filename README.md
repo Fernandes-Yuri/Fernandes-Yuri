@@ -139,17 +139,19 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
 ---
 
 ### 🌐 Contacto & Conexões
-
-<p align="left">
+<p align="center">
   <a href="mailto:workfjsyuri@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-workfjsyuri%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
+  &nbsp;
   <a href="https://www.linkedin.com/in/yuri-fernandes-901247385" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Yuri_Fernandes-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
+  <br><br>
   <a href="https://huggingface.co/fernandes-yuri" target="_blank">
-    <img src="https://img.shields.io/badge/🤗_Hugging_Face-fernandes--yuri-FFD21E?style=for-the-badge&logoColor=black" alt="Hugging Face" />
+    <img src="https://img.shields.io/badge/Hugging_Face-fernandes--yuri-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face" />
   </a>
+  &nbsp;
   <a href="https://bragasaude.online" target="_blank">
     <img src="https://img.shields.io/badge/Braga_Saúde-bragasaude.online-00A884?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Braga Saúde" />
   </a>
