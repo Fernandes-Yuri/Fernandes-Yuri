@@ -35,6 +35,41 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
 
 ---
 
+### 🧠 Estratégia de IA On-Device — Redução de Custos com Inteligência Local
+
+> *"Levar a inteligência para o dispositivo do usuário é a chave para escalar sem escalar custos."*
+
+<table>
+  <tr>
+    <td>
+      <h4>🎙️ Modelos de Voz On-Device</h4>
+      <p>
+        Exploração ativa de modelos de <strong>speech-to-text e text-to-speech compactos</strong> que rodam inteiramente no dispositivo Android, eliminando a dependência de APIs de voz na nuvem (Whisper API, Google Cloud Speech, etc.). A longo prazo, essa abordagem <strong>zera o custo por requisição de áudio</strong> — cada transcrição e síntese acontece localmente, sem latência de rede e sem cobrança por minuto de áudio processado.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h4>🔬 Modelos Especialistas Ultra-Compactos</h4>
+      <p>
+        Estratégia de treinar <strong>modelos extremamente pequenos (SLMs)</strong>, porém altamente especializados no nicho de saúde preventiva, para rodar <strong>100% on-device</strong>. Em vez de depender de LLMs genéricos na nuvem para tarefas simples — classificação de sintomas, triagem de alertas, sugestões de hábitos, interpretação de métricas biométricas — um modelo compacto fine-tunado com dados do domínio clínico entrega respostas precisas sem nenhuma requisição ao servidor.
+      </p>
+      <p><strong>Por que essa estratégia reduz custos drasticamente:</strong></p>
+      <ul>
+        <li><strong>Zero custo de inferência por usuário:</strong> Cada dispositivo processa localmente, transformando custo variável (por requisição) em custo fixo (treinamento único do modelo).</li>
+        <li><strong>Escalabilidade real:</strong> 100 ou 100.000 usuários fazendo requisições simultâneas não aumenta a conta do servidor — a inferência é distribuída nos próprios dispositivos.</li>
+        <li><strong>Menor latência:</strong> Respostas instantâneas sem depender de roundtrip à nuvem, melhorando a experiência em conexões instáveis ou offline.</li>
+        <li><strong>Privacidade nativa:</strong> Dados clínicos sensíveis nunca saem do dispositivo para inferências simples, reforçando a conformidade com a LGPD.</li>
+      </ul>
+      <p>
+        A premissa é clara: um modelo de <strong>~50–500 MB bem treinado no vocabulário e nas regras do nicho</strong> supera um modelo genérico de bilhões de parâmetros em tarefas específicas do domínio — com fração do custo e total independência de infraestrutura cloud.
+      </p>
+    </td>
+  </tr>
+</table>
+
+---
+
 ### 💻 Stack & Tecnologias
 
 <p align="left">
@@ -85,6 +120,7 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
 - 📱 **Desenvolvimento Mobile:** Aplicações Android modernas com Kotlin e Compose, offline-first e alta segurança em dados biométricos.
 - 🛡️ **Segurança & Governança:** Implementação de princípios Privacy by Design, isolamento multi-tenant, conformidade com a LGPD e fluxos de autenticação sem senhas (OTP).
 - 🔄 **Pipelines CI/CD:** Automação de compilação, testes automatizados e releases controlados via Harness.
+- 🧠 **IA On-Device & Modelos Especialistas:** Fine-tuning de SLMs compactos para inferência local, eliminando custos de cloud e garantindo escalabilidade com custo fixo.
 
 ---
 
@@ -110,6 +146,9 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
   </a>
   <a href="https://www.linkedin.com/in/yuri-fernandes-901247385" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Yuri_Fernandes-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://huggingface.co/fernandes-yuri" target="_blank">
+    <img src="https://img.shields.io/badge/🤗_Hugging_Face-fernandes--yuri-FFD21E?style=for-the-badge&logoColor=black" alt="Hugging Face" />
   </a>
   <a href="https://bragasaude.online" target="_blank">
     <img src="https://img.shields.io/badge/Braga_Saúde-bragasaude.online-00A884?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Braga Saúde" />
