@@ -23,7 +23,7 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
         <li><strong>App Android Nativo:</strong> Desenvolvido em <strong>Kotlin</strong> com <strong>Jetpack Compose</strong>, seguindo arquitetura MVVM/MVI, persistência local cifrada via <strong>Room Database</strong> (SQLCipher e migrações versionadas), sincronização resiliente com <strong>WorkManager</strong> e integração com <strong>Google Health Connect</strong>.</li>
         <li><strong>PWA Cuidador (Web):</strong> Interface reativa e segura (Zero-Trust) em TypeScript/PWA para acompanhamento de sinais vitais, checklists de medicamentos e avisos em tempo real.</li>
         <li><strong>Backend Gateway & Microsserviços (Python):</strong> Núcleo em <strong>Python</strong> responsável pelo roteamento de APIs, processamento de regras clínicas, extração e validação de laudos e orquestração de microsserviços.</li>
-        <li><strong>Módulo de IA & Voz:</strong> Transcrição e orquestração de fluxos conversacionais via WebSocket, transcrição de áudios (Whisper), síntese neural e integração com WhatsApp Business Cloud API.</li>
+        <li><strong>Módulo de IA &amp; Voz:</strong> Assistente conversacional com <strong>Rasa</strong> (NLU e gestão de diálogo) e <strong>motor determinístico em Kotlin</strong> para regras críticas, orquestração via WebSocket, transcrição de áudios (Whisper), síntese neural e integração com WhatsApp Business Cloud API.</li>
         <li><strong>Dados, Nuvem & LGPD:</strong> Infraestrutura com <strong>PostgreSQL dedicado</strong>, autenticação OTP em duas etapas, armazenamento autenticado de exames e esteiras de build/deploy contínuo com <strong>Harness</strong> e GitHub Actions.</li>
       </ul>
       <p>
@@ -35,9 +35,9 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
 
 ---
 
-### 🧠 Estratégia de IA On-Device — Redução de Custos com Inteligência Local
+### 🧠 Estratégia de IA Híbrida — Redução de Custos com Inferência Cloud
 
-> *"Levar a inteligência para o dispositivo do usuário é a chave para escalar sem escalar custos."*
+> *"Nem tudo precisa de um LLM: o que é crítico roda em código determinístico, o que é conversa roda na ferramenta mais enxuta possível."*
 
 <table>
   <tr>
@@ -50,19 +50,24 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
   </tr>
   <tr>
     <td>
-      <h4>🔬 Modelos Especialistas Ultra-Compactos</h4>
+      <h4>🧩 Rasa + Motor Determinístico em Kotlin</h4>
       <p>
-        Estratégia de treinar <strong>modelos extremamente pequenos (SLMs)</strong>, porém altamente especializados no nicho de saúde preventiva, para rodar <strong>100% on-device</strong>. Em vez de depender de LLMs genéricos na nuvem para tarefas simples — classificação de sintomas, triagem de alertas, sugestões de hábitos, interpretação de métricas biométricas — um modelo compacto fine-tunado com dados do domínio clínico entrega respostas precisas sem nenhuma requisição ao servidor.
+        Em vez de enviar toda interação para um LLM generalista na nuvem, a arquitetura conversacional é dividida em camadas, cada uma com o nível de previsibilidade adequado à tarefa:
       </p>
-      <p><strong>Por que essa estratégia reduz custos drasticamente:</strong></p>
       <ul>
-        <li><strong>Zero custo de inferência por usuário:</strong> Cada dispositivo processa localmente, transformando custo variável (por requisição) em custo fixo (treinamento único do modelo).</li>
-        <li><strong>Escalabilidade real:</strong> 100 ou 100.000 usuários fazendo requisições simultâneas não aumenta a conta do servidor — a inferência é distribuída nos próprios dispositivos.</li>
-        <li><strong>Menor latência:</strong> Respostas instantâneas sem depender de roundtrip à nuvem, melhorando a experiência em conexões instáveis ou offline.</li>
-        <li><strong>Privacidade nativa:</strong> Dados clínicos sensíveis nunca saem do dispositivo para inferências simples, reforçando a conformidade com a LGPD.</li>
+        <li><strong>Rasa (NLU &amp; gestão de diálogo):</strong> classificação de intenções, extração de entidades e fluxos conversacionais estruturados com um framework open source treinado no vocabulário do nicho de saúde preventiva — sem cobrança por token.</li>
+        <li><strong>Motor determinístico em Kotlin (on-device):</strong> tudo o que <strong>não admite margem de erro</strong> — horários e confirmação de doses de medicamentos, cálculos e faixas de referência de métricas biométricas, regras de alerta e escalonamento para o cuidador — é executado por regras explícitas e testáveis diretamente no app, nunca por um modelo probabilístico.</li>
+        <li><strong>LLM na nuvem apenas como exceção:</strong> reservado para o que realmente exige linguagem livre, reduzindo drasticamente o volume de chamadas pagas.</li>
+      </ul>
+      <p><strong>Por que essa estratégia reduz custos (e riscos):</strong></p>
+      <ul>
+        <li><strong>Menos inferência paga:</strong> a maior parte do tráfego é resolvida por regras locais e pelo Rasa, transformando custo variável por requisição em custo praticamente fixo de infraestrutura.</li>
+        <li><strong>Zero alucinação no que é crítico:</strong> decisões clínicas sensíveis seguem lógica determinística, auditável e coberta por testes unitários.</li>
+        <li><strong>Funciona offline:</strong> as regras críticas rodam no próprio dispositivo, sem depender de conexão ou de roundtrip à nuvem.</li>
+        <li><strong>Privacidade nativa:</strong> dados clínicos usados nas regras críticas não precisam sair do aparelho, reforçando a conformidade com a LGPD.</li>
       </ul>
       <p>
-        A premissa é clara: um modelo de <strong>~50–500 MB bem treinado no vocabulário e nas regras do nicho</strong> supera um modelo genérico de bilhões de parâmetros em tarefas específicas do domínio — com fração do custo e total independência de infraestrutura cloud.
+        <strong>Lição aprendida:</strong> antes dessa arquitetura, testei o fine-tuning de um <strong>Qwen 0.5B</strong> para inferência 100% on-device. Os resultados não atingiram a confiabilidade necessária para um contexto de saúde — e isso reforçou a premissa atual: <strong>onde não pode haver erro, use código determinístico; onde há linguagem, use a ferramenta mais simples que resolve</strong>.
       </p>
     </td>
   </tr>
@@ -87,6 +92,8 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <!-- PostgreSQL -->
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <!-- Rasa -->
+  <img src="https://img.shields.io/badge/Rasa-5A17EE?style=for-the-badge&logo=rasa&logoColor=white" alt="Rasa" />
 </p>
 
 ---
@@ -120,7 +127,7 @@ Trabalho combinando análise técnica aprofundada, boas práticas de segurança/
 - 📱 **Desenvolvimento Mobile:** Aplicações Android modernas com Kotlin e Compose, offline-first e alta segurança em dados biométricos.
 - 🛡️ **Segurança & Governança:** Implementação de princípios Privacy by Design, isolamento multi-tenant, conformidade com a LGPD e fluxos de autenticação sem senhas (OTP).
 - 🔄 **Pipelines CI/CD:** Automação de compilação, testes automatizados e releases controlados via Harness.
-- 🧠 **IA On-Device & Modelos Especialistas:** Fine-tuning de SLMs compactos para inferência local, eliminando custos de cloud e garantindo escalabilidade com custo fixo.
+- 🧠 **IA Conversacional & Motores Determinísticos:** Assistentes com Rasa (NLU e diálogo) combinados a regras de negócio em Kotlin para tarefas críticas sem margem de erro, reduzindo a dependência — e o custo — de inferência em LLMs na nuvem.
 
 ---
 
