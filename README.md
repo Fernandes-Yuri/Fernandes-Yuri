@@ -2,7 +2,7 @@
 
 ### 🚀 Engenharia de Software | Sistemas Distribuídos & Mobile
 
-Atuo na concepção, arquitetura e desenvolvimento de sistemas distribuídos, aplicações móveis de alta criticidade e soluções orientadas a microsserviços. Tenho o **Python** como linguagem principal de eleição 🐍, operando com profundidade e solidez em ecossistemas com **Kotlin** (Android nativo, Jetpack Compose, Room & C++/JNI), **FastAPI**, **TypeScript**, **React/Next.js** e **PostgreSQL**.
+Atuo na concepção, arquitetura e desenvolvimento de sistemas distribuídos, aplicações móveis de alta criticidade e soluções orientadas a microsserviços. Tenho o **Python** como linguagem principal de eleição 🐍, operando com profundidade e solidez em ecossistemas com **Kotlin** (Android nativo, Jetpack Compose, Room), **FastAPI**, **TypeScript**, **React/Next.js** e **PostgreSQL**.
 
 Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que unem **conformidade regulatória (LGPD / RDC 657/2022 SaMD)**, **regras clínicas determinísticas**, **segurança Zero-Trust** e esteiras robustas de integração contínua com **GitHub Actions**. Adoto desenvolvimento assistido por agentes de IA de última geração (**DeepSeek**, **Google Antigravity**, **OpenAI Codex**, **Hermes**, **OpenCode**) para elevar velocidade de entrega e qualidade de cobertura de testes.
 
@@ -42,15 +42,18 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
 <table>
   <tr>
     <td>
-      <h4>🎙️ Síntese de Voz Neural Própria On-Device (Piper TTS)</h4>
+      <h4>🎙️ Síntese de Voz Nativa Resiliente & Aprendizados On-Device</h4>
       <p>
-        Desenvolvimento e fine-tuning de voz neural própria em Português Brasileiro (pt-BR) baseada na arquitetura <strong>Piper TTS</strong>. A partir de um dataset customizado de 300 frases foneticamente balanceadas com expressões regionais de acolhimento e treinamento em GPU de alta performance, o modelo é exportado em formato <strong>ONNX</strong> para execução nativa via <strong>C++/JNI no Android</strong>.
+        A vocalização do assistente clínico é executada via <code>TextToSpeech</code> nativo do sistema operacional com camada de auto-reconexão resiliente, seleção proativa de engines públicas e ciclo de Push-to-Talk fluído.
       </p>
       <ul>
-        <li><strong>Custo zero de infraestrutura:</strong> Cada síntese de voz roda localmente na CPU do smartphone, eliminando a dependência e os custos recorrentes de APIs de TTS pagas por caractere.</li>
-        <li><strong>Latência zero &amp; 100% Offline:</strong> Resposta instantânea de áudio mesmo em áreas remotas ou em conexões instáveis.</li>
-        <li><strong>Contribuição Open Source:</strong> Pipeline preparado para doação e expansão do ecossistema aberto de vozes pt-BR do Piper (<code>rhasspy/piper-voices</code>).</li>
+        <li><strong>Custo Zero &amp; Sem Dependência de Nuvem:</strong> A síntese roda 100% no hardware do aparelho, eliminando cobranças recorrentes por caractere em APIs de voz externas.</li>
+        <li><strong>Latência Mínima &amp; Push-to-Talk Fluido:</strong> Fim de buffers pesados ou streaming picado; vocalização imediata e encerramento limpo da escuta.</li>
+        <li><strong>Arquitetura Descomplicada:</strong> Eliminação de bibliotecas binárias pesadas em C++/JNI, mantendo o APK enxuto (~38 MB) e livre de atritos de inicialização em diferentes fabricantes (Samsung OneUI, Xiaomi, Motorola).</li>
       </ul>
+      <p>
+        <em>💡 <strong>Lição de Engenharia:</strong> Treinei e implementei uma voz neural própria com fine-tuning em pt-BR baseada em <strong>Piper TTS</strong> e exportação ONNX para execução on-device. Na prática de produção, contudo, a abordagem se mostrou excessivamente complexa — inflava o APK em +48 MB, exigia workers pesados em background e aumentava o consumo de bateria — sem entregar uma qualidade perceptivelmente superior aos sintetizadores modernos já otimizados no próprio sistema operacional (Google Speech Services / Samsung TTS). A decisão técnica pragmática foi aposentar o Piper e manter o TTS nativo com camada de reconexão: custo zero, redução de ~80% no tamanho do app e eliminação total dos problemas de compatibilidade e fragilidade que o Piper trazia.</em>
+      </p>
     </td>
   </tr>
   <tr>
@@ -140,10 +143,10 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
 ### 📌 Competências & Foco de Atuação
 
 - 🌐 **Backend, APIs & Microsserviços:** Construção de gateways de alto throughput em FastAPI, barramentos de mensageria, modelagem relacional avançada com PostgreSQL e migrations seguras.
-- 📱 **Engenharia Mobile Nativa (Android):** Domínio de Kotlin moderno, Jetpack Compose, bancos locais protegidos (Room + SQLCipher), processamento assíncrono (WorkManager) e C++/JNI para inferência ONNX on-device.
+- 📱 **Engenharia Mobile Nativa (Android):** Domínio de Kotlin moderno, Jetpack Compose, bancos locais protegidos (Room + SQLCipher), processamento assíncrono (WorkManager) e serviços de plataforma (TextToSpeech resiliente, SpeechRecognizer, Health Connect).
 - 🛡️ **Segurança, Governança & LGPD:** Princípios de Privacy by Design, isolamento multi-tenant, sanitização determinística de dados sensíveis (PII), auditoria granular de acessos e conformidade com a regulação SaMD (RDC 657/2022).
 - 🔄 **DevOps & Integração Contínua:** Esteiras completas no GitHub Actions com gatekeepers de lint/testes, compilação de APKs assinados em nuvem, deploys controlados na AWS via SSM e pipelines de release com controle estrito de versão.
-- 🧠 **IA Pragmática & Eficiente:** Arquitetura de IA híbrida orientada a custo sustentável — pipelines NLU (Rasa), síntese de voz on-device (Piper), fine-tuning direcionado e integração com LLMs de ponta apenas onde agregam valor real.
+- 🧠 **IA Pragmática & Eficiente:** Arquitetura de IA híbrida orientada a custo sustentável — pipelines NLU (Rasa), vocalização nativa resiliente (TTS do sistema operacional), triagem determinística com tolerância zero a erro e integração com LLMs de ponta apenas onde agregam valor real.
 
 ---
 
