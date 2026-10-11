@@ -24,7 +24,7 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
         <li><strong>PWA Cuidador &amp; Web (React 19 / TypeScript / Vite):</strong> Interface Zero-Trust para acompanhamento de sinais vitais, checklists de medicamentos, mural multicuidador, telemetria BLE e linha do tempo de cuidados em tempo real.</li>
         <li><strong>Portal Administrativo &amp; Operações (Next.js):</strong> Painel de observabilidade com métricas clínicas agregadas, detecção de atividade suspeita (rate limit por IP/UID) e ferramentas de moderação conectadas ao backend.</li>
         <li><strong>Backend Gateway &amp; Microsserviços (FastAPI &amp; Python):</strong> Roteamento de alta performance, processamento de regras clínicas, barramento de segurança com rate limiting, emissão de relatórios médicos executivos em PDF e mensageria WhatsApp Cloud API.</li>
-        <li><strong>Dados, Nuvem &amp; Automação:</strong> Infraestrutura na <strong>AWS (EC2 &amp; RDS PostgreSQL)</strong> com acesso operacional via SSM (porta 22 fechada), CI/CD automatizado no <strong>GitHub Actions</strong> para deploys sem atalhos manuais e compilação de APKs assinados com entrega OTA.</li>
+        <li><strong>Dados, Nuvem &amp; Automação:</strong> Infraestrutura na <strong>AWS (EC2 &amp; RDS PostgreSQL)</strong> com porta 22 (SSH) estritamente fechada. Os deploys não são manuais: são 100% automatizados via <strong>GitHub Actions orquestrando AWS SSM</strong> diretamente nas instâncias (zero atalhos humanos), cobrindo migrations, restarts com health check e compilação de APKs assinados com entrega OTA.</li>
       </ul>
       <p>
         🌐 <strong>Conheça a plataforma:</strong> <a href="https://bragasaude.online" target="_blank">bragasaude.online</a>
@@ -145,7 +145,7 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
 - 🌐 **Backend, APIs & Microsserviços:** Construção de gateways de alto throughput em FastAPI, barramentos de mensageria, modelagem relacional avançada com PostgreSQL e migrations seguras.
 - 📱 **Engenharia Mobile Nativa (Android):** Domínio de Kotlin moderno, Jetpack Compose, bancos locais protegidos (Room + SQLCipher), processamento assíncrono (WorkManager) e serviços de plataforma (TextToSpeech resiliente, SpeechRecognizer, Health Connect).
 - 🛡️ **Segurança, Governança & LGPD:** Princípios de Privacy by Design, isolamento multi-tenant, sanitização determinística de dados sensíveis (PII), auditoria granular de acessos e conformidade com a regulação SaMD (RDC 657/2022).
-- 🔄 **DevOps & Integração Contínua:** Esteiras completas no GitHub Actions com gatekeepers de lint/testes, compilação de APKs assinados em nuvem, deploys controlados na AWS via SSM e pipelines de release com controle estrito de versão.
+- 🔄 **DevOps & Integração Contínua:** Esteiras 100% automatizadas no GitHub Actions com gatekeepers de lint/testes, compilação de APKs assinados e deploys na AWS orquestrados via SSM (processo totalmente automatizado via pipeline, sem intervenção manual, mantendo a porta 22/SSH fechada).
 - 🧠 **IA Pragmática & Eficiente:** Arquitetura de IA híbrida orientada a custo sustentável — pipelines NLU (Rasa), vocalização nativa resiliente (TTS do sistema operacional), triagem determinística com tolerância zero a erro e integração com LLMs de ponta apenas onde agregam valor real.
 
 ---
