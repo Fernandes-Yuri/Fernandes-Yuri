@@ -21,7 +21,7 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
       </p>
       <ul>
         <li><strong>App Android Nativo (Kotlin &amp; Jetpack Compose):</strong> Arquitetura MVVM/MVI, persistência local cifrada via <strong>Room Database (SQLCipher)</strong>, sincronização resiliente com <strong>WorkManager</strong>, integração <strong>Google Health Connect</strong>, rastreio de passos eficiente via hardware (<code>Sensor.TYPE_STEP_COUNTER</code>) e suporte a exames 100% locais por padrão.</li>
-        <li><strong>PWA Cuidador &amp; Web (React 19 / TypeScript / Vite):</strong> Interface Zero-Trust para acompanhamento de sinais vitais, checklists de medicamentos, mural multicuidador, telemetria BLE e linha do tempo de cuidados em tempo real.</li>
+        <li><strong>Site institucional (bragasaude.online):</strong> Landing page, página de download do APK, termos e privacidade, publicados no Firebase Hosting. <em>(O PWA Cuidador em React foi encerrado e é mantido apenas como experiência histórica.)</em></li>
         <li><strong>Portal Administrativo &amp; Operações (Next.js):</strong> Painel de observabilidade com métricas clínicas agregadas, detecção de atividade suspeita (rate limit por IP/UID) e ferramentas de moderação conectadas ao backend.</li>
         <li><strong>Backend Gateway &amp; Microsserviços (FastAPI &amp; Python):</strong> Roteamento de alta performance, processamento de regras clínicas, barramento de segurança com rate limiting, emissão de relatórios médicos executivos em PDF e mensageria WhatsApp Cloud API.</li>
         <li><strong>Dados, Nuvem &amp; Automação:</strong> Infraestrutura na <strong>AWS (EC2 &amp; RDS PostgreSQL)</strong> com porta 22 (SSH) estritamente fechada. Os deploys não são manuais: são 100% automatizados via <strong>GitHub Actions orquestrando AWS SSM</strong> diretamente nas instâncias (zero atalhos humanos), cobrindo migrations, restarts com health check e compilação de APKs assinados com entrega OTA.</li>
@@ -58,17 +58,17 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
   </tr>
   <tr>
     <td>
-      <h4>🧩 Rasa NLU + Motor Clínico Determinístico em Kotlin</h4>
+      <h4>🧩 NLU On-Device em Kotlin + LLM Cloud sob Demanda</h4>
       <p>
         Em vez de enviar toda e qualquer interação a LLMs caros na nuvem sujeitos a alucinações perigosas na área da saúde, a camada conversacional opera em um funil inteligente:
       </p>
       <ul>
-        <li><strong>Rasa Open Source (NLU &amp; Diálogo):</strong> Classificação de intenções e extração de entidades clínicas a partir de um vocabulário especializado em saúde preventiva e regionalismos brasileiros. Modelo ultraleve que processa multi-intenções (ex: desabafo de solidão + esquecimento de medicação) em milissegundos sem cobrança por token.</li>
+        <li><strong>NLU On-Device (Kotlin puro):</strong> Classificação de intenções e extração de entidades clínicas com regex e regras especializadas em saúde preventiva e regionalismos brasileiros, executadas 100% no aparelho (sem runtime Python, sem cobrança por token). O que o roteador não reconhece é delegado à LLM cloud.</li>
         <li><strong>Motor Determinístico Nativo (Kotlin On-Device):</strong> Tarefas críticas com <strong>tolerância zero a falhas</strong> — triagem de emergência médica (SAMU 192), horários e estoques de medicamentos, validação de limites de pressão/glicemia e regras de escalonamento — são executadas por algoritmos estritos com cobertura de testes unitários diretamente no app.</li>
         <li><strong>LLM Cloud sob Demanda:</strong> Modelos maiores em nuvem (ex: Groq Cloud) atuam estritamente como retaguarda para diálogos abertos não mapeados.</li>
       </ul>
       <p>
-        <em>💡 <strong>Lição de Engenharia:</strong> Testei o fine-tuning de um SLM (Qwen 0.5B) para rodar inteiramente on-device. Os resultados práticos evidenciaram que, para limites de segurança clínica e saúde geriátrica, modelos estocásticos de pequeno porte oferecem risco de inconsistência inaceitável. A solução superior e definitiva foi combinar NLU especializado (Rasa) para linguagem com lógica determinística em Kotlin para precisão matemática.</em>
+        <em>💡 <strong>Lição de Engenharia:</strong> Testei o fine-tuning de um SLM (Qwen 0.5B) para rodar inteiramente on-device. Os resultados práticos evidenciaram que, para limites de segurança clínica e saúde geriátrica, modelos estocásticos de pequeno porte oferecem risco de inconsistência inaceitável. A solução adotada foi combinar NLU em Kotlin on-device para linguagem com lógica determinística para precisão matemática — o Rasa, avaliado em fases de projeto, não está integrado ao app em produção.</em>
       </p>
     </td>
   </tr>
@@ -107,8 +107,6 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <!-- AWS -->
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" />
-  <!-- Rasa -->
-  <img src="https://img.shields.io/badge/Rasa-5A17EE?style=for-the-badge&logo=rasa&logoColor=white" alt="Rasa" />
   <!-- ONNX -->
   <img src="https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white" alt="ONNX" />
 </p>
@@ -146,7 +144,7 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
 - 📱 **Engenharia Mobile Nativa (Android):** Domínio de Kotlin moderno, Jetpack Compose, bancos locais protegidos (Room + SQLCipher), processamento assíncrono (WorkManager) e serviços de plataforma (TextToSpeech resiliente, SpeechRecognizer, Health Connect).
 - 🛡️ **Segurança, Governança & LGPD:** Princípios de Privacy by Design, isolamento multi-tenant, sanitização determinística de dados sensíveis (PII), auditoria granular de acessos e conformidade com a regulação SaMD (RDC 657/2022).
 - 🔄 **DevOps & Integração Contínua:** Esteiras 100% automatizadas no GitHub Actions com gatekeepers de lint/testes, compilação de APKs assinados e deploys na AWS orquestrados via SSM (processo totalmente automatizado via pipeline, sem intervenção manual, mantendo a porta 22/SSH fechada).
-- 🧠 **IA Pragmática & Eficiente:** Arquitetura de IA híbrida orientada a custo sustentável — pipelines NLU (Rasa), vocalização nativa resiliente (TTS do sistema operacional), triagem determinística com tolerância zero a erro e integração com LLMs de ponta apenas onde agregam valor real.
+- 🧠 **IA Pragmática & Eficiente:** Arquitetura de IA híbrida orientada a custo sustentável — NLU determinístico em Kotlin on-device, vocalização nativa resiliente (TTS do sistema operacional), regras clínicas estritas com testes unitários e integração com LLMs de ponta apenas onde agregam valor real.
 
 ---
 
