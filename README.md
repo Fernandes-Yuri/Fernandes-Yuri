@@ -10,7 +10,7 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
 
 ### 🏥 Ecossistema em Destaque: Braga Saúde
 
-> Plataforma completa de autocuidado clínico preventivo, automonitorização de hábitos e suporte familiar remoto (Modo Cuidador).
+> Plataforma de autocuidado, automonitorização de hábitos e suporte familiar remoto (Modo Cuidador), em homologação e testes operacionais. Os serviços online ainda não representam um lançamento final.
 
 <table>
   <tr>
@@ -21,9 +21,9 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
       </p>
       <ul>
         <li><strong>App Android Nativo (Kotlin &amp; Jetpack Compose):</strong> Arquitetura MVVM/MVI, persistência local cifrada via <strong>Room Database (SQLCipher)</strong>, sincronização resiliente com <strong>WorkManager</strong>, integração <strong>Google Health Connect</strong>, rastreio de passos eficiente via hardware (<code>Sensor.TYPE_STEP_COUNTER</code>) e suporte a exames 100% locais por padrão.</li>
-        <li><strong>Site institucional (bragasaude.online):</strong> Landing page, página de download do APK, termos e privacidade, publicados no Firebase Hosting. <em>(O PWA Cuidador em React foi encerrado e é mantido apenas como experiência histórica.)</em></li>
+        <li><strong>Site institucional (bragasaude.online):</strong> Landing page, página de download do APK, termos e privacidade, publicados no Firebase Hosting. O espaço de saúde mental e acolhimento fica em <a href="https://clinicas.bragasaude.online">clinicas.bragasaude.online</a>. <em>(O PWA Cuidador em React foi encerrado e é mantido apenas como experiência histórica.)</em></li>
         <li><strong>Portal Administrativo &amp; Operações (Next.js):</strong> Painel de observabilidade com métricas clínicas agregadas, detecção de atividade suspeita (rate limit por IP/UID) e ferramentas de moderação conectadas ao backend.</li>
-        <li><strong>Backend Gateway &amp; Microsserviços (FastAPI &amp; Python):</strong> Roteamento de alta performance, processamento de regras clínicas, barramento de segurança com rate limiting, emissão de relatórios médicos executivos em PDF e mensageria WhatsApp Cloud API.</li>
+        <li><strong>Backend Gateway &amp; Microsserviços (FastAPI &amp; Python):</strong> Roteamento de alta performance, processamento de regras clínicas, barramento de segurança com rate limiting, emissão de relatórios em PDF e suporte aos canais de chat e voz do aplicativo. O antigo assistente via WhatsApp foi descontinuado.</li>
         <li><strong>Dados, Nuvem &amp; Automação:</strong> Infraestrutura na <strong>AWS (EC2 &amp; RDS PostgreSQL)</strong> com porta 22 (SSH) estritamente fechada. Os deploys não são manuais: são 100% automatizados via <strong>GitHub Actions orquestrando AWS SSM</strong> diretamente nas instâncias (zero atalhos humanos), cobrindo migrations, restarts com health check e compilação de APKs assinados com entrega OTA.</li>
       </ul>
       <p>
@@ -52,7 +52,7 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
         <li><strong>Arquitetura Descomplicada:</strong> Eliminação de bibliotecas binárias pesadas em C++/JNI, mantendo o APK enxuto (~38 MB) e livre de atritos de inicialização em diferentes fabricantes (Samsung OneUI, Xiaomi, Motorola).</li>
       </ul>
       <p>
-        <em>💡 <strong>Lição de Engenharia:</strong> Treinei e implementei uma voz neural própria com fine-tuning em pt-BR baseada em <strong>Piper TTS</strong> e exportação ONNX para execução on-device. Na prática de produção, contudo, a abordagem se mostrou excessivamente complexa — inflava o APK em +48 MB, exigia workers pesados em background e aumentava o consumo de bateria — sem entregar uma qualidade perceptivelmente superior aos sintetizadores modernos já otimizados no próprio sistema operacional (Google Speech Services / Samsung TTS). A decisão técnica pragmática foi aposentar o Piper e manter o TTS nativo com camada de reconexão: custo zero, redução de ~80% no tamanho do app e eliminação total dos problemas de compatibilidade e fragilidade que o Piper trazia.</em>
+        <em>💡 <strong>Lição de Engenharia:</strong> Treinei e implementei uma voz neural própria com fine-tuning em pt-BR baseada em <strong>Piper TTS</strong> e exportação ONNX para execução on-device. Nos testes em aparelhos, contudo, a abordagem se mostrou excessivamente complexa — inflava o APK em +48 MB, exigia workers pesados em background e aumentava o consumo de bateria — sem entregar uma qualidade perceptivelmente superior aos sintetizadores modernos já otimizados no próprio sistema operacional (Google Speech Services / Samsung TTS). A decisão técnica pragmática foi aposentar o Piper e manter o TTS nativo com camada de reconexão: custo zero, redução de ~80% no tamanho do app e eliminação total dos problemas de compatibilidade e fragilidade que o Piper trazia.</em>
       </p>
     </td>
   </tr>
@@ -68,7 +68,7 @@ Minha atuação é pautada por rigor de engenharia: desenho arquiteturas que une
         <li><strong>LLM Cloud sob Demanda:</strong> Modelos maiores em nuvem (ex: Groq Cloud) atuam estritamente como retaguarda para diálogos abertos não mapeados.</li>
       </ul>
       <p>
-        <em>💡 <strong>Lição de Engenharia:</strong> Testei o fine-tuning de um SLM (Qwen 0.5B) para rodar inteiramente on-device. Os resultados práticos evidenciaram que, para limites de segurança clínica e saúde geriátrica, modelos estocásticos de pequeno porte oferecem risco de inconsistência inaceitável. A solução adotada foi combinar NLU em Kotlin on-device para linguagem com lógica determinística para precisão matemática — o Rasa, avaliado em fases de projeto, não está integrado ao app em produção.</em>
+        <em>💡 <strong>Lição de Engenharia:</strong> Testei o fine-tuning de um SLM (Qwen 0.5B) para rodar inteiramente on-device. Os resultados práticos evidenciaram que, para limites de segurança clínica e saúde geriátrica, modelos estocásticos de pequeno porte oferecem risco de inconsistência inaceitável. A solução adotada foi combinar NLU em Kotlin on-device para linguagem com lógica determinística para precisão matemática — o Rasa, avaliado em fases de projeto, não integra o aplicativo atual.</em>
       </p>
     </td>
   </tr>
