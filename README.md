@@ -1,8 +1,8 @@
 # Yuri Fernandes 👋
 
-Engenheiro de Software | Sistemas Distribuídos & Mobile
+Analista e Desenvolvedor | Sistemas Distribuídos & Mobile
 
-Atuo com arquitetura e desenvolvimento de sistemas distribuídos, aplicações móveis de alta criticidade e microsserviços. Minhas principais ferramentas: **Python**, **Kotlin** (Android nativo, Jetpack Compose), **FastAPI**, **TypeScript/React** e **PostgreSQL**, com foco em **segurança Zero-Trust**, **LGPD** e automação de CI/CD com **GitHub Actions**.
+Desenvolvo sistemas distribuídos, aplicações móveis de alta criticidade e microsserviços. Minhas principais ferramentas: **Python**, **Kotlin** (Android nativo, Jetpack Compose), **FastAPI**, **TypeScript/React** e **PostgreSQL**, com foco em **segurança Zero-Trust**, **LGPD** e automação de CI/CD com **GitHub Actions**.
 
 ---
 
